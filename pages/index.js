@@ -122,6 +122,36 @@ export default function Home() {
           </div>
         </div>
 
+        {/* STATS */}
+        <div className="mt-[120px] w-full">
+          <div className="container mx-auto items-center flex justify-center space-x-6">
+            <div className="card  border-[#FDC500] w-[300px] p-7">
+              <h1 className="font-bold text-3xl leading-10">290M+</h1>
+              <p className="text-[#7E8CAC] text-lg leading-8 font-normal">
+                Players Top Up
+              </p>
+            </div>
+            <div className="card  border-l-2 border-[#FDC500] w-[300px] p-7">
+              <h1 className="font-bold text-3xl leading-10">12.500+</h1>
+              <p className="text-[#7E8CAC] text-lg leading-8 font-normal">
+                Games Available
+              </p>
+            </div>
+            <div className="card  border-l-2 border-[#FDC500] w-[300px] p-7">
+              <h1 className="font-bold text-3xl leading-10">99,9%+</h1>
+              <p className="text-[#7E8CAC] text-lg leading-8 font-normal">
+                Happy Players
+              </p>
+            </div>
+            <div className="card  border-l-2 border-[#FDC500] w-[300px] p-7">
+              <h1 className="font-bold text-3xl leading-10">4.7</h1>
+              <p className="text-[#7E8CAC] text-lg leading-8 font-normal">
+                Rating Worlwide
+              </p>
+            </div>
+          </div>
+        </div>
+
         <div className="mt-[1000px] w-full">a</div>
       </main>
     </div>
