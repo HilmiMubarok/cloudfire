@@ -3,7 +3,9 @@ import Image from "next/image";
 
 import styles from "../styles/Home.module.css";
 import banner from "../public/banner_image.png";
+import cover from "../public/cover.png";
 import brand from "../public/brand.png";
+import brand_footer from "../public/brand_footer.png";
 import icon1 from "../public/icon1.png";
 import icon2 from "../public/icon2.png";
 import icon3 from "../public/icon3.png";
@@ -123,27 +125,27 @@ export default function Home() {
         </div>
 
         {/* STATS */}
-        <div className="mt-[120px] w-full">
+        <div className="mt-[72px] w-full">
           <div className="container mx-auto items-center flex justify-center space-x-6">
-            <div className="card  border-[#FDC500] w-[300px] p-7">
+            <div className="card border-[#FDC500] w-[300px] p-7">
               <h1 className="font-bold text-3xl leading-10">290M+</h1>
               <p className="text-[#7E8CAC] text-lg leading-8 font-normal">
                 Players Top Up
               </p>
             </div>
-            <div className="card  border-l-2 border-[#FDC500] w-[300px] p-7">
+            <div className="card border-l-2 border-[#FDC500] w-[300px] p-7">
               <h1 className="font-bold text-3xl leading-10">12.500+</h1>
               <p className="text-[#7E8CAC] text-lg leading-8 font-normal">
                 Games Available
               </p>
             </div>
-            <div className="card  border-l-2 border-[#FDC500] w-[300px] p-7">
+            <div className="card border-l-2 border-[#FDC500] w-[300px] p-7">
               <h1 className="font-bold text-3xl leading-10">99,9%+</h1>
               <p className="text-[#7E8CAC] text-lg leading-8 font-normal">
                 Happy Players
               </p>
             </div>
-            <div className="card  border-l-2 border-[#FDC500] w-[300px] p-7">
+            <div className="card border-l-2 border-[#FDC500] w-[300px] p-7">
               <h1 className="font-bold text-3xl leading-10">4.7</h1>
               <p className="text-[#7E8CAC] text-lg leading-8 font-normal">
                 Rating Worlwide
@@ -152,7 +154,99 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="mt-[1000px] w-full">a</div>
+        {/* STORY */}
+        <div className="mt-[100px] w-full mb-[150px]">
+          <div className="container mx-auto items-center flex justify-around">
+            <div className="left">
+              <Image src={cover} alt="Cover" className="aspect-square" />
+            </div>
+            <div className="right">
+              <h1 className="font-bold text-6xl leading-tight mb-8">
+                Win the Battle. <br /> Be the Champion
+              </h1>
+              <p className="font-normal text-2xl leading-8 mb-12">
+                Kami menyediakan jutaan cara untuk <br /> membantu players
+                menjadi <br /> pemenang sejati.
+              </p>
+              <a
+                href=""
+                className="px-4 py-3 bg-[#FDC500] rounded-full text-[#0C145A]"
+              >
+                Cari Turnamen
+              </a>
+            </div>
+          </div>
+        </div>
+
+        {/* FOOTER */}
+        <footer className="mt-[100px] bg-[#0C1F63] w-full py-16">
+          <div className="container mx-auto items-center flex justify-between">
+            <div>
+              <Image
+                src={brand_footer}
+                alt="Cloudfire Esport"
+                className="mb-2"
+              />
+              <p className="mb-8 font-normal text-lg leading-8">
+                Cloudfire Esport membantu gamers <br /> untuk menjadi pemenang
+                sejati.
+              </p>
+              <p className="font-normal text-lg leading-8">
+                Copyright 2021. All Rights Reserved.
+              </p>
+            </div>
+            <div className="flex flex-1 justify-around ">
+              <div>
+                <h3 className="font-semibold text-lg leading-8 mb-3">
+                  Company
+                </h3>
+                <ul className="flex flex-col space-y-5">
+                  <li>
+                    <a href="">About Us</a>
+                  </li>
+                  <li>
+                    <a href="">Press Release</a>
+                  </li>
+                  <li>
+                    <a href="">Terms of Use</a>
+                  </li>
+                  <li>
+                    <a href="">Privacy & Policy</a>
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <h3 className="font-semibold text-lg leading-8 mb-3">
+                  Support
+                </h3>
+                <ul className="flex flex-col space-y-5">
+                  <li>
+                    <a href="">Refund Policy</a>
+                  </li>
+                  <li>
+                    <a href="">Unlock Rewards</a>
+                  </li>
+                  <li>
+                    <a href="">Live Chatting</a>
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <h3 className="font-semibold text-lg leading-8 mb-3">
+                  Connect
+                </h3>
+                <ul className="flex flex-col space-y-5">
+                  <li>hi@cloudfire.space</li>
+                  <li>team@cluodfire.space</li>
+                  <li>Kendal, Jawa Tengah</li>
+                  <li>018-312-123-123</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </footer>
+
+        {/* <div className="mt-[1000px] w-full">a</div> */}
       </main>
     </div>
   );
